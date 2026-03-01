@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuickEscape — Privacy Policy / Terms</title>
+  <meta name="description" content="QuickEscape Privacy Policy and Terms" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121a24;
+      --text: #e7eef7;
+      --muted: rgba(231, 238, 247, 0.72);
+      --line: rgba(231, 238, 247, 0.12);
+      --accent: #6ee7ff;
+      --accent2: #a78bfa;
+      --chip: rgba(231, 238, 247, 0.08);
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(110,231,255,0.12), transparent 60%),
+                  radial-gradient(1200px 600px at 70% 0%, rgba(167,139,250,0.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 56px; }
+    header {
+      display: flex; gap: 14px; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; margin-bottom: 18px;
+    }
+    .title { display: flex; flex-direction: column; gap: 4px; }
+    h1 { font-size: 22px; margin: 0; letter-spacing: 0.2px; }
+    .sub { color: var(--muted); font-size: 13px; }
+    .lang {
+      display: flex; gap: 8px; background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line); padding: 6px; border-radius: 14px;
+    }
+    .lang button {
+      cursor: pointer; background: transparent; border: 0; color: var(--muted);
+      padding: 8px 12px; border-radius: 10px; font-weight: 650; letter-spacing: 0.1px;
+    }
+    .lang button.active {
+      color: var(--text);
+      background: linear-gradient(90deg, rgba(110,231,255,0.20), rgba(167,139,250,0.18));
+      border: 1px solid rgba(231,238,247,0.16);
+    }
+    .card {
+      background: rgba(18,26,36,0.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.22);
+    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    h2 {
+      font-size: 16px; margin: 0 0 10px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    h3 { margin: 14px 0 6px; font-size: 14px; }
+    p, li { color: var(--muted); line-height: 1.55; font-size: 14px; }
+    ul { margin: 8px 0 0 18px; }
+    .chip {
+      display: inline-block; font-size: 12px; padding: 6px 10px; border-radius: 999px;
+      background: var(--chip); border: 1px solid var(--line); color: var(--muted);
+      margin-right: 6px; margin-top: 6px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 14px; color: var(--muted); font-size: 12px; text-align: center; padding: 18px 0 0; }
+    .note {
+      border-left: 3px solid rgba(110,231,255,0.45);
+      padding: 10px 12px;
+      background: rgba(110,231,255,0.06);
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>QuickEscape — Legal</h1>
+        <div class="sub" id="updated"></div>
+      </div>
+      <div class="lang" role="tablist" aria-label="Language selector">
+        <button id="btn-es" class="active" aria-selected="true">ES</button>
+        <button id="btn-en" aria-selected="false">EN</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card" id="privacy">
+        <h2>🔒 <span data-i18n="privacy_title">Política de privacidad</span></h2>
+
+        <div class="chip" data-i18n="chip_nologin">Sin login</div>
+        <div class="chip" data-i18n="chip_local">Datos locales</div>
+        <div class="chip" data-i18n="chip_ads">AdMob</div>
+
+        <h3 data-i18n="pp_controller_h">1. Responsable</h3>
+        <p data-i18n="pp_controller">
+          Responsable: <b>Pol Jansà Sierra</b><br/>
+          Contacto: <b>poljansa.developer@gmail.com</b><br/>
+          País: España (UE)
+        </p>
+
+        <h3 data-i18n="pp_what_h">2. Qué hace la app</h3>
+        <p data-i18n="pp_what">
+          QuickEscape es una app de entretenimiento que genera excusas en distintos modos (humorístico/absurdo y serio).
+          No requiere registro ni cuenta.
+        </p>
+
+        <h3 data-i18n="pp_data_h">3. Datos tratados</h3>
+        <p data-i18n="pp_data">
+          QuickEscape no solicita datos personales directamente. La app utiliza Google AdMob para mostrar anuncios, y el SDK de anuncios
+          puede tratar datos como identificadores publicitarios, información del dispositivo y eventos de interacción con anuncios para
+          entregar anuncios, medir rendimiento y prevenir fraude.
+        </p>
+
+        <h3 data-i18n="pp_local_h">4. Datos guardados en el dispositivo</h3>
+        <p data-i18n="pp_local">
+          La app guarda localmente historial, favoritos y preferencias (idioma, modo corto, firma opcional y contador de generaciones).
+          Estos datos no se envían a servidores propios.
+        </p>
+
+        <h3 data-i18n="pp_eea_h">5. Consentimiento (EEE/UK/CH)</h3>
+        <p data-i18n="pp_eea">
+          En el Espacio Económico Europeo/Reino Unido/Suiza puede mostrarse un mensaje para elegir entre anuncios personalizados o no personalizados,
+          según corresponda.
+        </p>
+
+        <h3 data-i18n="pp_rights_h">6. Derechos</h3>
+        <p data-i18n="pp_rights">
+          Si te aplica GDPR, puedes solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad. Contacta al email de soporte.
+        </p>
+
+        <div class="note" data-i18n="pp_google_note">
+          Nota: Google puede actuar como responsable independiente para ciertos tratamientos publicitarios. Consulta:
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads policies</a>.
+        </div>
+      </section>
+
+      <section class="card" id="terms">
+        <h2>📄 <span data-i18n="terms_title">Términos y condiciones</span></h2>
+
+        <h3 data-i18n="t_accept_h">1. Aceptación</h3>
+        <p data-i18n="t_accept">Al usar QuickEscape aceptas estos términos.</p>
+
+        <h3 data-i18n="t_use_h">2. Uso</h3>
+        <p data-i18n="t_use">
+          QuickEscape es una app de entretenimiento. Te comprometes a usarla de forma legal y responsable.
+        </p>
+
+        <h3 data-i18n="t_content_h">3. Contenido generado</h3>
+        <p data-i18n="t_content">
+          Las excusas son aleatorias y pueden ser humorísticas. No garantizamos veracidad, idoneidad para todos los contextos ni que eviten consecuencias.
+          El uso es responsabilidad del usuario.
+        </p>
+
+        <h3 data-i18n="t_ads_h">4. Anuncios</h3>
+        <p data-i18n="t_ads">La app muestra anuncios mediante Google AdMob. La disponibilidad y formatos pueden variar.</p>
+
+        <h3 data-i18n="t_changes_h">5. Cambios</h3>
+        <p data-i18n="t_changes">Podemos actualizar estos textos. Publicaremos la versión vigente en esta página.</p>
+      </section>
+    </div>
+
+    <div class="footer" id="footer"></div>
+  </div>
+
+  <script>
+    const updatedDate = "01/03/2026";
+    const controllerEs = `Responsable: <b>Pol Jansà Sierra</b><br/>Contacto: <b>poljansa.developer@gmail.com</b><br/>País: España (UE)`;
+    const controllerEn = `Controller: <b>Pol Jansà Sierra</b><br/>Contact: <b>poljansa.developer@gmail.com</b><br/>Country: Spain (EU)`;
+
+    const i18n = {
+      es: {
+        updated: `Última actualización: ${updatedDate}`,
+        footer: "QuickEscape — Legal",
+        privacy_title: "Política de privacidad",
+        terms_title: "Términos y condiciones",
+        chip_nologin: "Sin login",
+        chip_local: "Datos locales",
+        chip_ads: "AdMob",
+
+        pp_controller_h: "1. Responsable",
+        pp_controller: controllerEs,
+
+        pp_what_h: "2. Qué hace la app",
+        pp_what: "QuickEscape es una app de entretenimiento que genera excusas en distintos modos (humorístico/absurdo y serio). No requiere registro ni cuenta.",
+
+        pp_data_h: "3. Datos tratados",
+        pp_data: "QuickEscape no solicita datos personales directamente. La app utiliza Google AdMob para mostrar anuncios, y el SDK de anuncios puede tratar datos como identificadores publicitarios, información del dispositivo y eventos de interacción con anuncios para entregar anuncios, medir rendimiento y prevenir fraude.",
+
+        pp_local_h: "4. Datos guardados en el dispositivo",
+        pp_local: "La app guarda localmente historial, favoritos y preferencias (idioma, modo corto, firma opcional y contador de generaciones). Estos datos no se envían a servidores propios.",
+
+        pp_eea_h: "5. Consentimiento (EEE/UK/CH)",
+        pp_eea: "En el Espacio Económico Europeo/Reino Unido/Suiza puede mostrarse un mensaje para elegir entre anuncios personalizados o no personalizados, según corresponda.",
+
+        pp_rights_h: "6. Derechos",
+        pp_rights: "Si te aplica GDPR, puedes solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad. Contacta al email de soporte.",
+
+        pp_google_note: 'Nota: Google puede actuar como responsable independiente para ciertos tratamientos publicitarios. Consulta: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads policies</a>.',
+
+        // ✅ TERMS (faltaban en tu dict, por eso no cambiaban)
+        t_accept_h: "1. Aceptación",
+        t_accept: "Al usar QuickEscape aceptas estos términos.",
+
+        t_use_h: "2. Uso",
+        t_use: "QuickEscape es una app de entretenimiento. Te comprometes a usarla de forma legal y responsable.",
+
+        t_content_h: "3. Contenido generado",
+        t_content: "Las excusas son aleatorias y pueden ser humorísticas. No garantizamos veracidad, idoneidad para todos los contextos ni que eviten consecuencias. El uso es responsabilidad del usuario.",
+
+        t_ads_h: "4. Anuncios",
+        t_ads: "La app muestra anuncios mediante Google AdMob. La disponibilidad y formatos pueden variar.",
+
+        t_changes_h: "5. Cambios",
+        t_changes: "Podemos actualizar estos textos. Publicaremos la versión vigente en esta página."
+      },
+
+      en: {
+        updated: `Last updated: ${updatedDate}`,
+        footer: "QuickEscape — Legal",
+        privacy_title: "Privacy policy",
+        terms_title: "Terms & conditions",
+        chip_nologin: "No login",
+        chip_local: "Local data",
+        chip_ads: "AdMob",
+
+        pp_controller_h: "1. Controller",
+        pp_controller: controllerEn,
+
+        pp_what_h: "2. What the app does",
+        pp_what: "QuickEscape is an entertainment app that generates excuses in different modes (fun/absurd and serious). No account required.",
+
+        pp_data_h: "3. Data processed",
+        pp_data: "QuickEscape does not directly ask for personal data. The app uses Google AdMob to show ads, and the ads SDK may process data such as advertising identifiers, device information, and ad interaction events to deliver ads, measure performance, and prevent fraud.",
+
+        pp_local_h: "4. Data stored on your device",
+        pp_local: "The app stores history, favorites, and preferences locally (language, short mode, optional signature, generation counter). This data is not sent to our servers.",
+
+        pp_eea_h: "5. Consent (EEA/UK/CH)",
+        pp_eea: "In the EEA/UK/Switzerland, you may see a consent message to choose between personalized or non-personalized ads, when applicable.",
+
+        pp_rights_h: "6. Your rights",
+        pp_rights: "If GDPR applies, you may request access, rectification, deletion, restriction, objection, and portability. Contact the support email.",
+
+        pp_google_note: 'Note: Google may act as an independent controller for certain advertising processing. See: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads policies</a>.',
+
+        // ✅ TERMS (ahora sí cambian)
+        t_accept_h: "1. Acceptance",
+        t_accept: "By using QuickEscape you agree to these terms.",
+
+        t_use_h: "2. Use",
+        t_use: "QuickEscape is an entertainment app. You agree to use it legally and responsibly.",
+
+        t_content_h: "3. Generated content",
+        t_content: "Excuses are generated randomly and may be humorous. We do not guarantee accuracy, suitability for every context, or that it will avoid consequences. You use the app at your own responsibility.",
+
+        t_ads_h: "4. Ads",
+        t_ads: "The app displays ads via Google AdMob. Availability and formats may vary.",
+
+        t_changes_h: "5. Changes",
+        t_changes: "We may update these texts. The current version will be available on this page."
+      }
+    };
+
+    function setLang(lang) {
+      const dict = i18n[lang];
+      document.documentElement.lang = lang;
+
+      document.getElementById("updated").innerHTML = dict.updated;
+      document.getElementById("footer").innerText = dict.footer;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.innerHTML = dict[key];
+      });
+
+      document.getElementById("btn-es").classList.toggle("active", lang === "es");
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+      document.getElementById("btn-es").setAttribute("aria-selected", lang === "es");
+      document.getElementById("btn-en").setAttribute("aria-selected", lang === "en");
+    }
+
+    document.getElementById("btn-es").addEventListener("click", () => setLang("es"));
+    document.getElementById("btn-en").addEventListener("click", () => setLang("en"));
+
+    setLang("es");
+  </script>
+</body>
+</html>
